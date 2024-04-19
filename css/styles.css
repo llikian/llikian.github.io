@@ -1,0 +1,9 @@
+:root {
+    --color-darkest: 20, 20, 20;
+    --color-dark: 30, 30, 30;
+    --color-lighter: 40, 40, 40;
+
+    color: white;
+    background-color: rgb(var(--color-darkest));
+    font: normal 0.85em / 1 "Courier New", serif;
+}
