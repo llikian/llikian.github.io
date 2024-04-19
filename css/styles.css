@@ -7,3 +7,63 @@
     background-color: rgb(var(--color-darkest));
     font: normal 0.85em / 1 "Courier New", serif;
 }
+
+html {
+    background-image: url("../data/pattern.png");
+    background-repeat: repeat;
+    scrollbar-color: deeppink black;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2%;
+}
+
+.MainBody {
+    margin-bottom: 10px;
+}
+
+header, footer, .MainBody {
+    background-color: rgba(var(--color-lighter), 0.95);
+    border-radius: 1em;
+    padding: 1em 1em;
+}
+
+header, footer {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: palevioletred;
+}
+
+a:hover,
+a:active {
+    color: deeppink;
+}
+
+a:visited:not(a:hover, a:active) {
+    color: hotpink;
+}
