@@ -1,17 +1,16 @@
 :root {
-    --color-darkest: 20, 20, 20;
-    --color-dark: 30, 30, 30;
-    --color-lighter: 40, 40, 40;
+    --color1: hsl(237, 30%, 35%);
+    --color2: hsl(248, 18%, 50%);
+    --color2-alpha: hsla(248, 18%, 50%, 95%);
+    --color3: hsl(253, 49%, 74%);
 
     color: white;
-    background-color: rgb(var(--color-darkest));
+    background-color: var(--color1);
     font: normal 0.85em / 1 "Courier New", serif;
 }
 
 html {
-    background-image: url("../data/pattern.png");
-    background-repeat: repeat;
-    scrollbar-color: deeppink black;
+    scrollbar-color: var(--color3) hsl(0, 0%, 10%);
 }
 
 body {
@@ -21,12 +20,12 @@ body {
     margin: 0 2%;
 }
 
-.MainBody {
+.main {
     margin-bottom: 10px;
 }
 
-header, footer, .MainBody {
-    background-color: rgba(var(--color-lighter), 0.95);
+header, footer, .main {
+    background-color: var(--color2-alpha);
     border-radius: 1em;
     padding: 1em 1em;
 }
@@ -37,7 +36,7 @@ header, footer {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -55,15 +54,12 @@ a {
     text-decoration: none;
 }
 
-a:link {
-    color: palevioletred;
+a:link,
+a:visited:not(a:hover, a:active) {
+    color: hsl(36, 49%, 74%);;
 }
 
 a:hover,
 a:active {
-    color: deeppink;
-}
-
-a:visited:not(a:hover, a:active) {
-    color: hotpink;
+    color: hsl(37, 72%, 61%);;
 }
