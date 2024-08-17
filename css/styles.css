@@ -1,8 +1,8 @@
 :root {
-    --color1: hsl(237, 30%, 35%);
-    --color2: hsl(248, 18%, 50%);
-    --color2-alpha: hsla(248, 18%, 50%, 95%);
-    --color3: hsl(253, 49%, 74%);
+    --color1: hsl(0, 0%, 15%);
+    --color2: hsl(0, 50%, 35%);
+    --color2-alpha: hsla(0, 50%, 35%, 90%);
+    --color3: hsl(0, 75%, 65%);
 
     color: white;
     background-color: var(--color1);
@@ -21,7 +21,7 @@ body {
 }
 
 .main {
-    margin-bottom: 10px;
+    margin: 0 2% 2em;
 }
 
 header, footer, .main {
@@ -37,7 +37,7 @@ header, footer {
 header {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 10px;
+    margin-bottom: 2em;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -62,4 +62,8 @@ a:visited:not(a:hover, a:active) {
 a:hover,
 a:active {
     color: hsl(37, 72%, 61%);;
+}
+
+img {
+    box-shadow: none;
 }
