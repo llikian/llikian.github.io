@@ -1,0 +1,43 @@
+:root {
+    background-color: hsl(0, 0%, 10%);
+    color: hsl(260, 100%, 90%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header, nav, footer {
+    text-align: center;
+    background-color: hsl(0, 0%, 20%);
+}
+
+nav, footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav {
+    background-color: hsl(0, 0%, 30%);
+}
+
+footer {
+    margin: auto 0 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited:not(a:hover, a:active) {
+    color: hsl(260, 49%, 74%);;
+}
+
+a:hover,
+a:active {
+    color: hsl(260, 72%, 61%);;
+}
