@@ -5,8 +5,10 @@
 
   <title>Killian Poulette - Portfolio</title>
 
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="data/logo.png" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/styles/styles.css" rel="stylesheet">
+  <link href="assets/logo.png" rel="shortcut icon" type="image/x-icon"/>
+
+  <script src="scripts/include-html.js"></script>
 </head>
 <body>
   <header>
@@ -17,9 +19,11 @@
   <nav>
     <a href="index.html">Home</a>
     <a>Projects</a>
-    <a>Lorem</a>
-    <a>Ipsum</a>
+    <a>Resume</a>
+    <a>Contact</a>
   </nav>
+
+  <div include-html="pages/projects.html"></div>
 
   <footer>
     <span>Killian Poulette</span>
@@ -30,5 +34,7 @@
     <span>-</span>
     <span><a href="https://github.com/llikian" target="_blank">GitHub - llikian</a></span>
   </footer>
+
+  <script> includeHTML(); </script>
 </body>
 </html>
